@@ -139,6 +139,25 @@ figcaption.figd{
 
 
 }
+figcaption.fige{
+    font-size:11px;
+    font-family: arial,sans-serif;
+    font-style: italic;
+    color: rgba(0,0,0,0.5);
+    margin-top:-5px;
+    position:relative;
+    left:-65px;
+
+}
+figcaption.figf{
+    font-style:italic;
+    font-size:11px;
+    font-family:arial,sans-serif;
+    color:rgba(0,0,0,0.5);
+    margin-top:-20px;
+    position:relative;
+    left:-146px;
+}
 
 .lastlink {
     color:red;
@@ -203,7 +222,7 @@ p.g{
     line-height:22.995px;
     display:block ;
 }
-a.lastlink2,a.lastlink3,a.lastlink4{
+a.lastlink2,a.lastlink3,a.lastlink4,a.lastlink5,a.lastlink6{
     text-decoration:none;
     color:red;
 }
@@ -214,5 +233,22 @@ a.lastlink3:hover{
     text-decoration:underline;
 }
 a.lastlink4:hover{
+    text-decoration:underline;
+}
+#meeting{
+    height:420px;
+    width:600px;
+}
+a.debu {
+    color:red;
+    text-decoration: none;
+}
+a.debu:hover{
+    text-decoration: underline;
+}
+a.lastlink5:hover{
+    text-decoration:underline;
+}
+a.lastlink6:hover{
     text-decoration:underline;
 }
