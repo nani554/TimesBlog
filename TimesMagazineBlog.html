@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
 <div id="header">
     <img class="head" src="t-logo-36.gif" alt=""/>
     <p class="Go"><a class="head" href="" title="Go to times magazine" id="anchor">go back to home</a></p>
@@ -101,7 +102,55 @@
     <a href=""><img class="pic" src="twitter-16.gif" alt=""/></a>
     <a href=""><img class="pic" src="google-16.gif" alt=""/></a>
     <hr class="e">
+    <!--5-->
+    <p class="a"><a href="" class="smallhead">Food Matters</a></p><br>
+    <h2><a class="nounderline" href="" title="Permanent Link To Recepie From The Four Horse's Men's One Month Anniversary Staff Meal">Recepie From The Four Horse's Men's One<br> Month Anniversary Staff Meal</a></h2>
+    <figure>
+     <img src="savage.jpg" id="meeting" target="_blank" alt=""/>
+     <figcaption class="fige">Curtola’s take on brandade, a comforting European dish of salted cod and olive oil. Paul Quitoriano</figcaption>
+     </figure>
+     <button onclick="food()">previous</button>
+     <button onclick="community()">next</button><br>
+     <p>Earlier this summer, at noon on what may have been the hottest day of the year,<br> the buzzy new Brooklyn restaurant and wine bar the Four Horsemen hadn’t yet opened its<br> doors for service — they usually serve from the late afternoon until late at night — but<br> three tables had been pushed together and were being set for a feast. The restaurant,<br> which <a href="" class="debu">debuted</a> in June, is a collaboration between the consultant Justin Chearno and<br> partners Randy Moon, Christina Topsoe and her husband, the musician James Murphy<br> — who invited the rest of their staff and collaborators to celebrate something of a<br> milestone: making it past the one-month mark and finally having a moment to breathe.<br> <a href="" class="lastlink5">Read more…</a></p>
+     <a href="" ><img class="pic" src="facebook-16.gif" alt=""/></a>
+    <a href=""><img class="pic" src="twitter-16.gif" alt=""/></a>
+    <a href=""><img class="pic" src="google-16.gif" alt=""/></a>
+    <hr class="e">
+    <p class="a"><a href="" class="smallhead">In Store</a></p><br>
+    <h2><a class="nounderline" href="" title="Permanent Link to David Bailey's Latest Muse: a Tod's Handbag">David Bailey's Latest Muse: a Tod's Handbag</a></h2>
+    <p class="c"><a href="" class="firstlink">WOMEN'S FASHION</a>| by <a href ="" class="secondlink" title="More Post by BROOKE ROBB">BROOKE ROBB</a> |AUGUST 20, 2015 2:30 PM</p>
+    <figure>
+      <img src="handbag.jpg" alt="">
+    </figure>
+    <figcaption class="figf">David Bailey's </figcaption>
+    <p class="h">The photographer’s latest portrait is a departure from the swinging ’60s images he’s<br> known for. <a href="" class="lastlink6">More…</a></p>
+     <a href="" ><img class="pic" src="facebook-16.gif" alt=""/></a>
+    <a href=""><img class="pic" src="twitter-16.gif" alt=""/></a>
+    <a href=""><img class="pic" src="google-16.gif" alt=""/></a>
+    <hr class="e">
+     <script>
+     var c = 0;
+     var pics = new Array("savage.jpg","men.jpg","bottle.jpg","community.jpg","food.jpg","chef.jpg","fish.jpg");
+     
+     function food(){
+        c-- ;
+        if(c== -1){
+          c=6 ;
 
+        }
+        var f = document.getElementById("meeting") ;//Have a good look at code especially eqaul and assign 
+        f.setAttribute("src",pics[c]);
+     }
+      function community(){
+        c++ ;
+        if(c== 7){
+          c= 0 ;
+
+        }
+        var f = document.getElementById("meeting");
+        f.setAttribute("src",pics[c]);
+      }
+</script>
 
     </div>
 </body>
