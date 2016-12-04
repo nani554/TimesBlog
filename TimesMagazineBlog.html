@@ -135,9 +135,11 @@
     <h2><a href="" class="nounderline" title="Permanent link to His First New York Show in Five Years, Shepard Fairey Is Still Questioning Everything">In His First New York Show in Five<br> Years, Shepard Fairey Is Still Questioning<br> Everything</a></h2>
     <p class="c"><a href="" class="firstlink">CULTURE</a> | BY <a href="" class="secondlink" title="More post by curt mcvey">CURT MCVEY</a> | AUGUST 20 2015 12:00 PM</p>
     <figure>
-        <img src="img/artist.jpg" width=600px height=420px alt="">
+        <img src="img/artist.jpg" id="artist" width=600px height=420px alt="">
     </figure>
-    <figcaption class="figg">The artist Shepard Fairey in his L.A. studio, working on a painting that will be featured in his new solo show “On Our<br> Hands,” opening at Jacob Lewis Gallery next month. Obey Giant Art, via Shepard Fairey</figcaption>
+    <figcaption class="figg">The artist Shepard Fairey in his L.A. studio, working on a painting that will be featured in his new solo show “On Our<br> Hands,” opening at Jacob Lewis Gallery next month. Obey Giant Art, via Shepard Fairey</figcaption><br>
+    <button onclick="postlady()">previous</button>
+    <button onclick="fruit()">next</button>
 
      <p class="h">On Sept. 18, the street artist Shepard Fairey will open his first solo show in New York<br> since 2010’s “Mayday” — the suitably colossal closing exhibition at the now-defunct<br> Deitch Projects. Fairey’s latest offering, a series of new mixed-media paintings titled “On<br> Our Hands,” will serve as his inaugural exhibition at Jacob Lewis Gallery, effectively<br> consummating a 10-year friendship between the artist and Mr. Lewis, the gallery’s owner<br> and the first director of the influential Pace Prints in Chelsea. “Jacob looks at every<br> aspect of what the artist is doing, not just the genre, the price or how in fashion you are<br>,” notes Fairey from his studio in Los Angeles, where he continues to finalize the collection.<br> “If you look at the other artists he’s worked with, whether it’s Ryan McGinness or How<br> and Nosm, they’re the only people doing what they do.”<br><br>
 
@@ -170,6 +172,29 @@
         var f = document.getElementById("meeting");
         f.setAttribute("src",pics[c]);
       }
+
+
+
+       var a = 0;
+      var imgs = ["img/artist.jpg","img/fruit.jpg","img/spider.jpg","img/troop.jpg","img/obey.jpg","img/shepard.jpg","img/soda.jpg","img/lady.jpg","img/postlady.jpg"];
+
+      function postlady(){
+        a--;
+        if(a == -1){
+            a = 8;
+        }
+        var g= document.getElementById("artist");
+        g.setAttribute("src",imgs[a]);
+      }
+        function fruit(){
+            a++ ;
+            if(a==9){
+                a= 0 ;
+
+            }
+           var g = document.getElementById("artist");
+            g.setAttribute("src",imgs[a]);
+        }
 </script>
 
     </div>
